@@ -1,0 +1,172 @@
+<!-- <app-navbar></app-navbar>
+
+<div *ngIf="currentUser">
+  <h2>Welcome, {{ currentUser.name }}!</h2>
+  <p>Customer Id: {{ currentUser.userID }}</p>
+  <p>Email: {{ currentUser.email }}</p>
+  <p>Phone: {{ currentUser.phone }}</p>
+</div>
+
+
+<button (click)="logout()">Logout</button>
+
+
+
+<app-footer></app-footer> -->
+<app-navbar></app-navbar>
+
+<div class="container py-4">
+  <div class="row mb-4">
+    <div class="col-12 d-flex justify-content-between align-items-center">
+      <a routerLink="/" class="text-decoration-none">
+        <i class="bi bi-arrow-left-circle-fill me-2"></i> Back to Home
+      </a>
+      <h2 class="fw-bold">My Profile</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-lg-3 mb-4 mb-lg-0">
+      <div class="card sticky-top shadow-sm border-0">
+        <div class="card-body text-center">
+          <h5 class="fw-bold">{{ currentUser.name }}</h5>
+          <p class="text-muted small"><i class="bi bi-envelope"></i> {{ currentUser.email }}</p>
+          <p class="text-muted small"><i class="bi bi-telephone"></i> {{ currentUser.phone }}</p>
+          <button class="btn btn-outline-secondary btn-sm mt-3" (click)="activeTab = 'edit'">
+            <i class="bi bi-pencil"></i> Edit Profile
+          </button>
+        </div>
+
+        <hr />
+        <div class="btn-group-vertical w-100 px-3">
+          <button class="btn btn-outline-primary text-start" (click)="activeTab = 'orders'">
+            <i class="bi bi-bag-check me-2"></i> Orders
+          </button>
+          <button class="btn btn-outline-primary text-start" (click)="activeTab = 'help'">
+            <i class="bi bi-question-circle me-2"></i> Help
+          </button>
+        </div>
+
+        <hr />
+        <button class="btn btn-outline-danger w-100" (click)="logout()">
+          <i class="bi bi-box-arrow-right me-2"></i> Logout
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-lg-9">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <ng-container [ngSwitch]="activeTab">
+            <!-- Orders Tab -->
+            <div *ngSwitchCase="'orders'">
+              <h4 class="mb-4">🧾 Your Order History</h4>
+
+              <div *ngIf="orders.length === 0" class="text-muted">
+                You haven’t placed any orders yet.
+              </div>
+
+              <div *ngFor="let order of orders" class="card mb-4 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold">{{ order.restaurantName }}</h5>
+                    <span class="badge bg-success">{{ order.status }}</span>
+                  </div>
+
+
+                  <p class="text-muted mb-1">
+                    <i class="bi bi-receipt"></i> Order #{{ order.orderID }} | {{ order.orderDate |date:'EEE, MMM d, h:mm a'}}
+                  </p>
+
+                  <div *ngFor="let item of order.items" class="d-flex align-items-center mb-2">
+                    <img [src]="  item.image" alt="{{ item.name }}" class="order-item-img me-3" />
+                    <div>
+                      <div class="fw-bold">{{ item.name }}</div>
+                      <div class="text-muted">Quantity: {{ item.quantity }}</div>
+                      <div class="text-muted">Price: ₹{{ item.price }}</div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <strong>Total Paid: ₹{{ order.totalAmount }}</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Edit Profile Tab -->
+            <div *ngSwitchCase="'edit'">
+              <h4 class="mb-4">✏️ Edit Your Profile</h4>
+              <form #editForm="ngForm" (ngSubmit)="onUpdateCustomer()">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" id="name" class="form-control" [(ngModel)]="currentUser.name" name="name"
+                    required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" class="form-control" [(ngModel)]="currentUser.email" name="email"
+                    required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="text" id="phone" class="form-control" [(ngModel)]="currentUser.phone" name="phone"
+                    required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" id="password" class="form-control" [(ngModel)]="currentUser.password"
+                    name="password" required />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Update Profile</button>
+              </form>
+            </div>
+
+            <!-- Help Tab -->
+            <div *ngSwitchCase="'help'">
+              <h4 class="mb-4">🧠 Frequently Asked Questions</h4>
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item mb-3" *ngFor="let faq of faqs; let i = index">
+                  <h2 class="accordion-header" [id]="'heading' + i">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      [attr.data-bs-target]="'#collapse' + i" aria-expanded="false"
+                      [attr.aria-controls]="'collapse' + i">
+                      <i [class]="faq.icon + ' me-2 text-primary'"></i> {{ faq.question }}
+                    </button>
+                  </h2>
+                  <div [id]="'collapse' + i" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading' + i"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">{{ faq.answer }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Default Fallback -->
+            <div *ngSwitchDefault class="card shadow-sm p-4 mb-4 bg-light rounded welcome-card">
+            <h4 class="text-primary mb-3">Welcome, {{ currentUser.name }}!</h4>
+            <!-- <p class="text-muted">Customer Id: {{ currentUser.userID }}</p> -->
+            <p><strong>Email:</strong> {{ currentUser.email }}</p>
+            <p><strong>Phone:</strong> {{ currentUser.phone }}</p>
+            <p class="text-secondary mt-3">Select a tab to view more details.</p>
+          </div>
+
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

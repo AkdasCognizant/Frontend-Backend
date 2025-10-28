@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+
+<div class="container py-5">
+  <!-- Page Title -->
+  <h2 class="text-center fw-bold mb-4">Explore Our Menu</h2>
+
+  <!-- Menu Items Grid -->
+  <div *ngIf="menuItems.length; else noItems" class="row g-4">
+    <div class="col-md-6 col-lg-4" *ngFor="let item of menuItems; trackBy: trackByItemId">
+      <div class="card h-100 shadow-sm border-0">
+        <!-- Item Image -->
+        <img *ngIf="item.imageUrl || item.image" [src]="item.imageUrl || item.image" class="card-img-top rounded-top"
+          alt="{{ item.name }}" style="height: 200px; object-fit: cover;" />
+
+        <!-- Item Details -->
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title fw-semibold">{{ item.name }}</h5>
+            <p class="card-text text-muted mb-2">Price: ₹{{ item.price }}</p>
+          </div>
+
+          <!-- Add to Cart Button -->
+          <button class="btn btn-outline-success mt-auto" (click)="addToCart(item)">
+            <i class="bi bi-cart-plus me-2"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Items Message -->
+  <ng-template #noItems>
+    <div class="text-center mt-5">
+      <h5 class="text-muted">No menu items available for this restaurant.</h5>
+      <p class="text-secondary">Please check back later or explore other restaurants.</p>
+    </div>
+  </ng-template>
+
+  <!-- Proceed to Cart Button -->
+  <div class="text-center mt-5">
+    <button class="btn btn-primary px-4 py-2" (click)="proceedToCart()">
+      <i class="bi bi-bag-check me-2"></i> Proceed to Cart
+    </button>
+  </div>
+</div>
+
+<div *ngIf="showSnackbar" class="snackbar">
+  {{snackbarMessage}}
+</div>
+
+
+<app-footer></app-footer>

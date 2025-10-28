@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+
+<body>
+    <div class="login-wrapper">
+        <div class="container" id="container">
+
+            <!-- Left: Illustration -->
+            <div class="carousel-container"></div>
+
+            <!-- Right: Login Form -->
+            <div class="form-container">
+                <form [formGroup]="restLoginForm" (ngSubmit)="onLoginSuccess()">
+                    <h4>Welcome Back, Restaurant</h4>
+
+                    <!-- Email -->
+                    <div class="input-group">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" formControlName="email"
+                            [placeholder]="restLoginForm.get('email')?.invalid && restLoginForm.get('email')?.touched ? 'Email Required' : 'Email address'"
+                            [class.error]="restLoginForm.get('email')?.invalid && restLoginForm.get('email')?.touched" />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group">
+                        <i class="bi bi-key"></i>
+                        <input type="password" formControlName="password"
+                            [placeholder]="restLoginForm.get('password')?.invalid && restLoginForm.get('password')?.touched ? 'Password Required' : 'Password'"
+                            [class.error]="restLoginForm.get('password')?.invalid && restLoginForm.get('password')?.touched" />
+                    </div>
+
+                    <!-- Login Button -->
+                    <button type="submit" [disabled]="restLoginForm.invalid">Log In</button>
+
+                    <!-- Social Login -->
+                    <div class="social-login">
+                        <button class="google">
+                            <i class="bi bi-google"></i> Google
+                        </button>
+                        <button class="facebook">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </button>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="form-links">
+                        <!-- ADD FORGOT PASSWORD FUNCTIONALITY -->
+                        <a>Forgot Password?</a>
+                        <span> | </span>
+                        <a routerLink="/restaurantSignup" id="register">Sign Up</a>
+                    </div>
+
+                    <!-- Feedback Message -->
+                    <div *ngIf="message" class="mt-3 text-center">
+                        <p [ngClass]="message.includes('successful') ? 'text-success' : 'text-danger'">{{ message }}</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<app-footer></app-footer>

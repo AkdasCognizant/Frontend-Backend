@@ -1,0 +1,110 @@
+<app-navbar></app-navbar>
+
+
+<body>
+  <div class="login-wrapper">
+    <div class="container" id="container">
+ 
+      <!-- Left: Illustration -->
+      <div class="carousel-container"></div>
+ 
+      <!-- Right: Signup Form -->
+      <div class="form-container">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+          <h4>Create Your Account</h4>
+ 
+          <!-- Restaurant Name -->
+          <div class="input-group">
+            <i class="bi bi-person"></i>
+            <input
+              type="text"
+              formControlName="rname"
+              [placeholder]="submitted && f['name'].errors ? 'Restaurant Name is required' : 'Restaurant Name'"
+              [class.error]="submitted && f['name'].errors"
+            />
+          </div>
+ 
+          <!-- Owner Name -->
+          <div class="input-group">
+            <i class="bi bi-person"></i>
+            <input
+              type="text"
+              formControlName="oname"
+              [placeholder]="submitted && f['name'].errors ? 'Owner Name is required' : 'Owner Name'"
+              [class.error]="submitted && f['name'].errors"
+            />
+          </div>
+ 
+          <!-- Email -->
+          <div class="input-group">
+            <i class="bi bi-envelope"></i>
+            <input
+              type="email"
+              formControlName="email"
+              [placeholder]="submitted && f['email'].errors ? 'Enter a valid email address' : 'Email address'"
+              [class.error]="submitted && f['email'].errors"
+            />
+          </div>
+ 
+          <!-- Phone -->
+          <div class="input-group">
+            <i class="bi bi-telephone"></i>
+            <input
+              type="number"
+              formControlName="phone"
+              [placeholder]="submitted && f['phone'].errors ? 'Enter a valid 10-digit phone number' : 'Phone number'"
+              [class.error]="submitted && f['phone'].errors"
+            />
+          </div>
+ 
+          <!-- Password -->
+          <div class="input-group">
+            <i class="bi bi-key"></i>
+            <input
+              type="password"
+              formControlName="password"
+              [placeholder]="submitted && f['password'].errors ? 'Password must be at least 6 characters' : 'Create password'"
+              [class.error]="submitted && f['password'].errors"
+            />
+          </div>
+ 
+          <!-- Address -->
+          <div class="input-group">
+            <i class="bi bi-map"></i>
+            <input
+              type="text"
+              formControlName="address"
+              [placeholder]="submitted && f['password'].errors ? 'Address is mandatory' : 'Full Address'"
+              [class.error]="submitted && f['password'].errors"
+            />
+          </div>
+ 
+          <!-- Terms & Conditions Checkbox -->
+          <div class="checkbox-container">
+            <input type="checkbox" formControlName="termsAccepted" />
+            <label style="color: #fff;">I agree to the Terms & Conditions</label>
+          </div>
+ 
+          <!-- Submit Button -->
+          <button type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+ 
+          <!-- Links -->
+          <div class="form-links">
+            <span style="color: #fff;">Already a Restaurant Owner?</span>
+            <a [routerLink]="['/restaurantLogin']" id="login">Login</a>
+          </div>
+ 
+          <!-- Feedback Message -->
+          <div *ngIf="message" class="mt-3 text-center">
+            <p [ngClass]="message.includes('successfully') ? 'text-success' : 'text-danger'">{{ message }}</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+
+<app-footer></app-footer>

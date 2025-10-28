@@ -1,0 +1,294 @@
+<app-navbar></app-navbar>
+
+<!-- <div class="container mt-2"> -->
+<!-- <div class="carousel-size-box text-center"> -->
+<!-- <h1 class="MainTitle">
+            Hungry? We've got you covered!
+        </h1>
+        <div class="fs-1 mb-3">🍕 🍔 🥤</div>
+        <h4 class="mb-4">Order from your favourite restaurant and get delivered fresh and fast</h4>
+
+        <button class="btn btn-warning" [routerLink]="['/restaurant']"><i class="bi bi-lightning-charge"></i> 
+            Order Now
+        </button>
+
+
+    -->
+<!-- Pizza Icon -->
+<div class="floating-icon top-right lg-visible" style="animation-delay: 0s;">
+    <div class="icon-container large">
+        <!-- <span class="icon-text">🍕</span> -->
+    </div>
+</div>
+
+<!-- Burger Icon -->
+<div class="floating-icon bottom-left lg-visible" style="animation-delay: 1s;">
+    <div class="icon-container medium">
+        <!-- <span class="icon-text">🍔</span> -->
+    </div>
+</div>
+
+
+<!-- </div> -->
+<!-- </div> -->
+
+<div class="swiggy-snackbar" *ngIf="showSnackbar">
+    <div class="snackbar-content">
+        <span class="snackbar-icon">🛵</span>
+        <span class="snackbar-text">
+            Order is <strong>{{ latestOrder?.status }}</strong>
+        </span>
+    </div>
+</div>
+
+
+<h3 class="mt-5 mb-3 text-center">Best Food Options</h3>
+<div class="container">
+    <div id="foodCarousel1" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
+        <div class="carousel-inner text-center">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="MenuItems/biryani.jpg" class="img-fluid food-img" alt="Biryani"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Biryani</h5>
+                    <p class="card-text">Special Hyderabadi biryani at Coimbatore.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="MenuItems/misal-pav.jpg" class="img-fluid food-img" alt="Misal Pav"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Misal Pav</h5>
+                    <p class="card-text">Highly spiced curry of beans with kind of Indian bread roll.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="MenuItems/pav bhaji.jpg" class="img-fluid food-img" alt="Pav Bhaji"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Pav Bhaji</h5>
+                    <p class="card-text">Authentic taste of Maharashtra.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <img src="MenuItems/pizza.jpg" class="img-fluid food-img" alt="Pizza"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Medium size pizza with delicious topping.</p>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+                <img src="MenuItems/tandoori chicken.jpg" class="img-fluid food-img" alt="Tandoori Chicken"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Tandoori Chicken</h5>
+                    <p class="card-text">Chicken marinated in yogurt and tandoori masala.</p>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-item">
+                <img src="MenuItems/idli.jpg" class="img-fluid food-img" alt="Idli"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Idli</h5>
+                    <p class="card-text">Savory steamed rice cakes served with chutney.</p>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="carousel-item">
+                <img src="MenuItems/Dosa.jpg" class="img-fluid food-img" alt="Ghee Roast Dosa"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Ghee Roast Dosa</h5>
+                    <p class="card-text">Crispy dosa served with chutney & sambar.</p>
+                </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="carousel-item">
+                <img src="MenuItems/butter chicken.jpg" class="img-fluid food-img" alt="Butter Chicken"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Butter Chicken</h5>
+                    <p class="card-text">Tender chicken in mildly spiced tomato sauce.</p>
+                </div>
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="carousel-item">
+                <img src="MenuItems/sambar.jpg" class="img-fluid food-img" alt="Sambar"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Sambar</h5>
+                    <p class="card-text">Tamarind-based broth with lentils and vegetables.</p>
+                </div>
+            </div>
+
+            <!-- Slide 10 -->
+            <div class="carousel-item">
+                <img src="MenuItems/shahi paneer.jpg" class="img-fluid food-img" alt="Shahi Paneer"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Shahi Paneer</h5>
+                    <p class="card-text">Rich Mughlai-style paneer curry.</p>
+                </div>
+            </div>
+
+            <!-- Slide 11 -->
+            <div class="carousel-item">
+                <img src="MenuItems/malbar fish curry.jpg" class="img-fluid food-img" alt="Malabar Fish Curry"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Malabar Fish Curry</h5>
+                    <p class="card-text">Authentic fish curry from Kerala.</p>
+                </div>
+            </div>
+
+            <!-- Slide 12 -->
+            <div class="carousel-item">
+                <img src="MenuItems/Rogan Josh.jpg" class="img-fluid food-img" alt="Rogan Josh"
+                    style="max-height: 400px; object-fit: cover;" />
+                <div class="card-body mt-3">
+                    <h5 class="card-title">Rogan Josh</h5>
+                    <p class="card-text">Rogan josh includes portions of lamb or mutton braised with a gravy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<br>
+
+<!-- Carousel 2 -->
+<div class="container">
+    <div id="foodCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <img src="MenuItems/gulab-jamun.jpg" class="img-fluid food-img" alt="Gulab Jamun" />
+                        <div class="card-body">
+                            <h5 class="card-title">Gulab Jamun</h5>
+                            <p class="card-text">fried balls of dough crafted from milk solids and semolina, soaked with
+                                a fragrant syrup.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="MenuItems/kaju-katli.jpg" class="img-fluid food-img" alt="Kaju Katli" />
+                        <div class="card-body">
+                            <h5 class="card-title">Kaju Katli</h5>
+                            <p class="card-text">Kaju Katli is made using full-fat milk, sugar and ghee,Cashews.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="MenuItems/khaja.jpg" class="img-fluid food-img" alt="Khaja" />
+                        <div class="card-body">
+                            <h5 class="card-title">Khaja</h5>
+                            <p class="card-text">It is basically the layered fritters dunked in sugar syrup.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="MenuItems/kulfi.jpg" class="img-fluid food-img" alt="Kulfi" />
+                        <div class="card-body">
+                            <h5 class="card-title">Kulfi</h5>
+                            <p class="card-text">Made of condensed milk include saffron, cardamom, rosewater, mango and
+                                pistachio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <img src="MenuItems/pongle.jpg" class="img-fluid food-img" alt="Pongle" />
+                        <div class="card-body">
+                            <h5 class="card-title">Pongle</h5>
+                            <p class="card-text">Made with rice, moong dal, jaggery, ghee, nuts & raisins.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="MenuItems/ras-malai.jpg" class="img-fluid food-img" alt="Ras Malai" />
+                        <div class="card-body">
+                            <h5 class="card-title">Ras Malai</h5>
+                            <p class="card-text">flattened balls of chhena soaked in malai (clotted cream) flavoured
+                                with cardamom.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="MenuItems/rice-kheer.jpg" class="img-fluid food-img" alt="Rice Kheer" />
+                        <div class="card-body">
+                            <h5 class="card-title">Rice Kheer</h5>
+                            <p class="card-text">Crispy dosa served with chutney & sambar.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="MenuItems/rasgulla.jpg" class="img-fluid food-img" alt="Rasgulla" />
+                        <div class="card-body">
+                            <h5 class="card-title">Rasgulla</h5>
+                            <p class="card-text"> Indian dessert crafted from milk casein having a spongy,round shape.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <h3 class="mt-5 mb-3 text-center">Top Restaurants in Coimbatore</h3>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 mb-4" *ngFor="let r of restaurants">
+                <a [routerLink]="['/restaurant', r.id]" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img [src]="r.image" class="card-img-top" alt="{{ r.name }}" />
+                        <div class="card-body">
+                            <h5 class="card-title">{{ r.name }}</h5>
+                            <p class="card-text">Rating: ⭐ {{ r.rating }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <app-footer></app-footer>

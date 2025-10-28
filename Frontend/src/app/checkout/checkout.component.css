@@ -1,0 +1,440 @@
+/* back to cart and checkout css  */
+
+.checkout-header {
+  display: flex;
+  align-items: center;
+  /* vertical-align: middle; */
+  justify-content: space-between;
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Back link styling */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: #6b7280; 
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #1f2937; 
+}
+
+/* Arrow icon placeholder */
+.arrow-icon {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+  margin-right: 0.5rem; 
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* Title styling */
+.checkout-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* radio button  */
+/* Hide the native radio button */
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the custom radio button circle */
+input[type="radio"]::before {
+  content: '';
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  background-color: #fff;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Style the custom radio button when checked */
+input[type="radio"]:checked::before {
+  border-color: #f97316; 
+  background-color: #f97316;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+/* MAIN DIV  */
+.fixedpos{
+  position:sticky;
+  top: 30px;
+}
+
+.gradient-subtle {
+  background-color:  linear-gradient(180deg, hsl(0 0% 100%), hsl(220 13% 98%));
+  margin: 0px 100px 10px 100px;
+}
+
+.main-content-container {
+  max-width: 1200px;
+}
+ 
+.left-section {
+  flex: 3;
+}
+ 
+.right-section {
+  flex: 2;
+  min-width: 400px;  
+  height: auto;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.address-container {
+  display: grid;
+  gap: 1rem;
+  width: 700px;
+}
+
+.addressBox {
+  height: 80px;
+}
+
+.payment-container {
+  display: grid;
+  gap: 1rem;
+  width: 700px;
+}
+
+.paymentBox {
+  height: 80px;
+}
+
+.drop-shadow-gray-bg {
+  box-shadow: #000000;
+}
+
+
+/* button effect add new address */
+.outline {
+  color: #000000;
+  border: 1px solid #e2e8f0; 
+  background-color: #ffffff; 
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+
+
+.outline:hover {
+  color: #ffffff;
+  background-color: #f97316; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+}
+
+
+/* button effect for PAY NOW*/
+.payNow {
+  color: #ffffff;
+  border: 1px solid #e2e8f0; 
+  background-color: #f97316; 
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.payNow:hover {
+  transform:scale(1.08);
+  /* transition: transform 0.3 ease-in-out; */
+  color: #ffffff;
+  border: 1px solid #e2e8f0; 
+  background-color: #f97316; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+}
+
+/* credit card input box  */
+.space-y-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; 
+}
+
+/* Responsive grid for MM/YY and CVV inputs */
+.grid.grid-cols-2.gap-3 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem; 
+}
+
+/* order summary  */
+.order-summary-card { 
+  position: sticky;
+  top: 30px; 
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 400px;
+  margin: 0px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.icon-header {
+  font-size: 1.5rem;
+  color: #f97316;
+  margin-right: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+  color: #212529;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  gap: 0.75rem;
+}
+
+.item-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.item-restaurant {
+  font-size: 0.85rem;
+  color: #71717a;
+}
+
+.item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 500;
+}
+
+.item-quantity {
+  font-size: 0.9rem;
+  color: #71717a;
+}
+
+.item-total-price {
+  font-size: 1rem;
+  color: #333;
+}
+
+.express-delivery-card {
+  background-color: #eaff001c;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #eaff0065;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.express-delivery-card .header {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.express-delivery-card .left-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.express-delivery-card .right-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.express-delivery-card .icon {
+  font-size: 1rem;
+  color: #ffdd00;
+}
+
+.express-delivery-card .express-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.express-delivery-card .old-price {
+  font-size: 0.85rem;
+  color: #71717a;
+  text-decoration: line-through;
+}
+
+.express-delivery-card .new-price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.express-delivery-card .description {
+  font-size: 0.75rem;
+  color: #71717a;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.charges-summary {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.summary-label {
+  color: #555;
+}
+
+.summary-value {
+  font-weight: 500;
+  color: #333;
+}
+
+.summary-value.text-success {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  margin-bottom: 1.5rem;
+}
+
+.total-label {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.total-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #212529;
+}
+
+.estimated-delivery {
+  background-color: #f8f9fa;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.25rem;
+}
+
+.estimated-delivery i {
+  color: #71717a;
+}
+
+.place-order-button {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background-color: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.place-order-button:hover {
+  background-color: #e06d15;
+  transform: scale(1.05);
+}
+
+.place-order-button i {
+  font-size: 1.2rem;
+}
+
+.secure-payment-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #71717a;
+  text-align: center;
+}
+
+.secure-payment-info i {
+  color: #71717a;
+}
+.item-thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.item-details {
+  flex: 1;
+}

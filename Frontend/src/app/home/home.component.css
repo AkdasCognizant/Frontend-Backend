@@ -1,0 +1,224 @@
+.food-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 350px;
+
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.carousel-size-box {
+    height: 400px;
+    width: 100%;
+    background-color: #ffe602;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* main title css  */
+/* Base styles for MainTitle */
+.MainTitle {
+    font-weight: bold;
+    color: var(--primary-foreground, #222);
+    /* Fallback if CSS variable isn't set */
+    margin-bottom: 1.5rem;
+    /* mb-6 */
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* Responsive font sizes */
+@media (min-width: 768px) {
+    .MainTitle {
+        font-size: 3.75rem;
+        /* md:text-6xl */
+    }
+}
+
+@media (max-width: 767px) {
+    .MainTitle {
+        font-size: 2.25rem;
+        /* text-4xl */
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+/* animation effect css  */
+
+/* Visibility for large screens */
+.lg-visible {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .lg-visible {
+        display: block;
+    }
+}
+
+/* Positioning */
+.top-right {
+    position: absolute;
+    top: 20rem;
+    /* top-20 */
+    right: 5.5rem;
+    /* right-10 */
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 20rem;
+    /* bottom-20 */
+    left: 5.5rem;
+    /* left-10 */
+}
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Icon container styles */
+.icon-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container.large {
+    width: 5rem;
+    /* w-20 */
+    height: 5rem;
+    /* h-20 */
+}
+
+.icon-container.medium {
+    width: 4rem;
+    /* w-16 */
+    height: 4rem;
+    /* h-16 */
+}
+
+/* Icon text styles */
+.icon-text {
+    font-size: 2rem;
+    /* default */
+}
+
+.icon-container.large .icon-text {
+    font-size: 8.5rem;
+    /* text-4xl */
+}
+
+.icon-container.medium .icon-text {
+    font-size: 8.5rem;
+    /* text-3xl */
+}
+.swiggy-snackbar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff5722; /* Swiggy orange */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1055;
+  animation: slideUp 0.4s ease-out;
+  max-width: 90%;
+}
+
+.snackbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.snackbar-icon {
+  font-size: 1.4rem;
+}
+
+.snackbar-text {
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.snackbar-track {
+  background-color: #fff;
+  color: #ff5722;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.snackbar-track:hover {
+  background-color: #ffe0d3;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

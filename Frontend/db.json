@@ -1,0 +1,1494 @@
+{
+  "customers": [
+    {
+      "userID": 1,
+      "name": "Akdas Sayyad",
+      "email": "akdas@gmail.com",
+      "password": "akdas123",
+      "phone": "9527875657",
+      "address": [
+        {
+          "type": "Home",
+          "fullAddress": "123 Main St, Springfield",
+          "isDefault": true
+        },
+        {
+          "type": "Work",
+          "fullAddress": "789 Tech Park, Cybercity"
+        }
+      ],
+      "id": "db62"
+    },
+    {
+      "userID": 2,
+      "name": "Himanshu Nagose",
+      "email": "himanshu@gmail.com",
+      "password": "himanshu123",
+      "phone": "8765432109",
+      "address": [
+        {
+          "type": "Home",
+          "fullAddress": "456 Park Ave, Greenview"
+        },
+        {
+          "type": "Other",
+          "fullAddress": "101 Mountain Rd, Hilltop"
+        }
+      ],
+      "id": "3f68"
+    },
+    {
+      "userID": 3,
+      "name": "Ganesh Talwekar",
+      "email": "ganesh@gmail.com",
+      "password": "ganesh123",
+      "phone": "7654321098",
+      "address": [
+        {
+          "type": "Home",
+          "fullAddress": "789 Lake View, Waterside"
+        }
+      ],
+      "id": "ef92"
+    },
+    {
+      "userID": 4,
+      "name": "Parag Koli",
+      "email": "parag123@gmail.com",
+      "password": "parag123",
+      "phone": "6543210979",
+      "address": [
+        {
+          "type": "Work",
+          "fullAddress": "202 Business Tower, Downtown"
+        },
+        {
+          "type": "Home",
+          "fullAddress": "321 Riverwalk, Old Town"
+        }
+      ],
+      "id": "7ad1"
+    },
+    {
+      "userID": 5,
+      "name": "Juned Patel",
+      "email": "juned@gmail.com",
+      "password": "juned123",
+      "phone": "5432109876",
+      "address": [
+        {
+          "type": "Home",
+          "fullAddress": "111 Garden Ln, Suburbia"
+        }
+      ],
+      "id": "16fd"
+    },
+    {
+      "id": "773c",
+      "userID": 1758213708413,
+      "name": "jack henry",
+      "email": "jack@gmail.com",
+      "phone": 7899877898,
+      "password": "2345678",
+      "termsAccepted": true,
+      "address": []
+    },
+    {
+      "id": "0d42",
+      "userID": 1758213808416,
+      "name": "peter parker",
+      "email": "peter@gmail.com",
+      "phone": 9876543210,
+      "password": "2345678",
+      "termsAccepted": true,
+      "address": []
+    },
+    {
+      "id": "c4ae",
+      "name": "xyz",
+      "password": "123456",
+      "email": "pqr@gmail.com",
+      "phone": 1234567891,
+      "termsAccepted": true
+    },
+    {
+      "id": "98e0",
+      "name": "test ",
+      "password": "akdas123",
+      "email": "test@gmail.com",
+      "phone": 8766879890,
+      "termsAccepted": true
+    }
+  ],
+  "restaurantUsers": [
+    {
+      "id": "3a1e",
+      "rname": "Vada Pav Center",
+      "oname": "juned patel",
+      "password": "juned123",
+      "email": "juned123@gmail.com",
+      "phone": 8989098987,
+      "address": "Sarvanampatti , Tamil Nadu",
+      "termsAccepted": true
+    },
+    {
+      "id": "7323",
+      "rname": "Khana Khazana",
+      "oname": "Modi",
+      "password": "modi123",
+      "email": "modi@gmail.com",
+      "phone": 8908989898,
+      "address": "noida, delhi",
+      "termsAccepted": true
+    }
+  ],
+  "cart": [
+    {
+      "id": "1bcf",
+      "userID": 5,
+      "restID": 2,
+      "restaurantName": "Hotel Hari ",
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg",
+          "imageUrl": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 7,
+          "image": "MenuItems/pav bhaji.jpg",
+          "imageUrl": "MenuItems/pav bhaji.jpg"
+        }
+      ],
+      "itemCount": 8,
+      "totalAmount": 620
+    },
+    {
+      "id": "129c",
+      "userID": 1758213808416,
+      "restID": 2,
+      "restaurantName": "Hotel Hari ",
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg",
+          "imageUrl": "MenuItems/misal-pav.jpg"
+        }
+      ],
+      "itemCount": 1,
+      "totalAmount": 60
+    },
+    {
+      "id": "b039",
+      "userID": 2,
+      "restID": 6,
+      "restaurantName": "Rajpurohit",
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Rasgulla",
+          "price": 80,
+          "quantity": 2,
+          "image": "MenuItems/rasgulla.jpg"
+        }
+      ],
+      "itemCount": 2,
+      "totalAmount": 160
+    },
+    {
+      "id": "e0a6",
+      "userID": 3,
+      "restID": 6,
+      "restaurantName": "Rajpurohit",
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Rasgulla",
+          "price": 80,
+          "quantity": 1,
+          "image": "MenuItems/rasgulla.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Rice Kheer",
+          "price": 40,
+          "quantity": 2,
+          "image": "MenuItems/rice-kheer.jpg"
+        },
+        {
+          "itemID": 1,
+          "name": "Gulab Jamun",
+          "price": 80,
+          "quantity": 3,
+          "image": "MenuItems/gulab-jamun.jpg"
+        }
+      ],
+      "itemCount": 6,
+      "totalAmount": 400
+    }
+  ],
+  "orders": [
+    {
+      "id": "d439",
+      "orderID": 1758192453551,
+      "userID": 3,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 2,
+          "image": "MenuItems/pav bhaji.jpg",
+          "imageUrl": "MenuItems/pav bhaji.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg",
+          "imageUrl": "MenuItems/misal-pav.jpg"
+        }
+      ],
+      "totalAmount": 259.6,
+      "totalItems": 3,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "789 Lake View, Waterside"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-18T10:47:33.551Z"
+    },
+    {
+      "id": "fa73",
+      "orderID": 1758204965372,
+      "userID": 4,
+      "restID": 4,
+      "items": [
+        {
+          "itemID": 4,
+          "name": "Tomato Soup",
+          "price": 50,
+          "quantity": 1,
+          "image": "",
+          "imageUrl": ""
+        }
+      ],
+      "totalAmount": 59,
+      "totalItems": 1,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "321 Riverwalk, Old Town"
+      },
+      "paymentMethod": 3,
+      "orderDate": "2025-09-18T14:16:05.373Z"
+    },
+    {
+      "id": "482d",
+      "orderID": 1758205473528,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg",
+          "imageUrl": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 17,
+          "image": "MenuItems/tandoori chicken.jpg",
+          "imageUrl": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 2478,
+      "totalItems": 18,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "321 Riverwalk, Old Town"
+      },
+      "paymentMethod": 3,
+      "orderDate": "2025-09-18T14:24:33.528Z"
+    },
+    {
+      "id": "abda",
+      "orderID": 1758214959572,
+      "userID": 1,
+      "restID": 1,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Idli",
+          "price": 30,
+          "quantity": 4,
+          "image": "MenuItems/idli.jpg",
+          "imageUrl": "MenuItems/idli.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Dosa",
+          "price": 40,
+          "quantity": 2,
+          "image": "MenuItems/Dosa.jpg",
+          "imageUrl": "MenuItems/Dosa.jpg"
+        }
+      ],
+      "totalAmount": 236,
+      "totalItems": 6,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-18T17:02:39.573Z"
+    },
+    {
+      "id": "c395",
+      "orderID": 1758258860220,
+      "userID": 1,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg",
+          "imageUrl": "MenuItems/misal-pav.jpg"
+        }
+      ],
+      "totalAmount": 70.8,
+      "totalItems": 1,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-19T05:14:20.220Z"
+    },
+    {
+      "id": "630c",
+      "orderID": 1758260838177,
+      "userID": 1,
+      "restID": 1,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Idli",
+          "price": 30,
+          "quantity": 2,
+          "image": "MenuItems/idli.jpg",
+          "imageUrl": "MenuItems/idli.jpg"
+        }
+      ],
+      "totalAmount": 70.8,
+      "totalItems": 2,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-19T05:47:18.177Z"
+    },
+    {
+      "id": "e7b8",
+      "orderID": 1758284480429,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 2,
+          "image": "MenuItems/misal-pav.jpg",
+          "imageUrl": "MenuItems/misal-pav.jpg"
+        }
+      ],
+      "totalAmount": 141.6,
+      "totalItems": 2,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-19T12:21:20.429Z"
+    },
+    {
+      "id": "39c6",
+      "orderID": 1758285110284,
+      "userID": 4,
+      "restID": 6,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Rasgulla",
+          "price": 80,
+          "quantity": 1,
+          "image": "MenuItems/rasgulla.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Rice Kheer",
+          "price": 40,
+          "quantity": 1,
+          "image": "MenuItems/rice-kheer.jpg"
+        }
+      ],
+      "totalAmount": 141.6,
+      "totalItems": 2,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-19T12:31:50.284Z"
+    },
+    {
+      "id": "6385",
+      "orderID": 1758285133725,
+      "userID": 4,
+      "restID": 1,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Dosa",
+          "price": 40,
+          "quantity": 1,
+          "image": "MenuItems/Dosa.jpg"
+        }
+      ],
+      "totalAmount": 47.2,
+      "totalItems": 1,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-19T12:32:13.725Z"
+    },
+    {
+      "id": "e662",
+      "orderID": 1758285347638,
+      "userID": 2,
+      "restID": 5,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Strawberry Ice Cream",
+          "price": 50,
+          "quantity": 1,
+          "image": "MenuItems/S_IceCream.jpg"
+        }
+      ],
+      "totalAmount": 59,
+      "totalItems": 1,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "456 Park Ave, Greenview"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-19T12:35:47.638Z"
+    },
+    {
+      "id": "5f12",
+      "orderID": 1758287345631,
+      "userID": 1,
+      "restID": 1,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Idli",
+          "price": 30,
+          "quantity": 2,
+          "image": "MenuItems/idli.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Dosa",
+          "price": 40,
+          "quantity": 2,
+          "image": "MenuItems/Dosa.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Vada",
+          "price": 25,
+          "quantity": 3,
+          "image": "MenuItems/sambar.jpg"
+        }
+      ],
+      "totalAmount": 253.7,
+      "totalItems": 7,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-19T13:09:05.631Z"
+    },
+    {
+      "id": "e3df",
+      "orderID": 1758387451915,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 2,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 354,
+      "totalItems": 3,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-20T16:57:31.915Z"
+    },
+    {
+      "id": "d66d",
+      "orderID": 1758388249036,
+      "userID": 4,
+      "restID": 6,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Gulab Jamun",
+          "price": 80,
+          "quantity": 1,
+          "image": "MenuItems/gulab-jamun.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Rasgulla",
+          "price": 80,
+          "quantity": 2,
+          "image": "MenuItems/rasgulla.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Rice Kheer",
+          "price": 40,
+          "quantity": 2,
+          "image": "MenuItems/rice-kheer.jpg"
+        }
+      ],
+      "totalAmount": 377.6,
+      "totalItems": 5,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-20T17:10:49.036Z"
+    },
+    {
+      "id": "46d3",
+      "orderID": 1758447464091,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 3,
+          "image": "MenuItems/pav bhaji.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 2,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 2,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 708,
+      "totalItems": 7,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-21T09:37:44.091Z"
+    },
+    {
+      "id": "9953",
+      "orderID": 1758460556788,
+      "userID": 4,
+      "restID": 3,
+      "items": [
+        {
+          "itemID": 3,
+          "name": "Butter Chicken",
+          "price": 150,
+          "quantity": 2,
+          "image": "MenuItems/butter chicken.jpg"
+        }
+      ],
+      "totalAmount": 354,
+      "totalItems": 2,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-21T13:15:56.788Z"
+    },
+    {
+      "id": "0090",
+      "orderID": 1758460689621,
+      "userID": 1,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 1,
+          "image": "MenuItems/pav bhaji.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 1,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 306.8,
+      "totalItems": 3,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-21T13:18:09.622Z"
+    },
+    {
+      "id": "6ee9",
+      "orderID": 1758462296361,
+      "userID": 1,
+      "restID": 3,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Rogan Josh",
+          "price": 120,
+          "quantity": 3,
+          "image": "MenuItems/Rogan Josh.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Butter Chicken",
+          "price": 150,
+          "quantity": 4,
+          "image": "MenuItems/butter chicken.jpg"
+        },
+        {
+          "itemID": 1,
+          "name": "Shahi Paneer",
+          "price": 100,
+          "quantity": 4,
+          "image": "MenuItems/shahi paneer.jpg"
+        }
+      ],
+      "totalAmount": 1604.8,
+      "totalItems": 11,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-21T13:44:56.361Z"
+    },
+    {
+      "id": "aa4a",
+      "orderID": 1758482008398,
+      "userID": 1,
+      "restID": 3,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Shahi Paneer",
+          "price": 100,
+          "quantity": 4,
+          "image": "MenuItems/shahi paneer.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Rogan Josh",
+          "price": 120,
+          "quantity": 1,
+          "image": "MenuItems/Rogan Josh.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Butter Chicken",
+          "price": 150,
+          "quantity": 1,
+          "image": "MenuItems/butter chicken.jpg"
+        }
+      ],
+      "totalAmount": 790.6,
+      "totalItems": 6,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-21T19:13:28.398Z"
+    },
+    {
+      "id": "d52c",
+      "orderID": 1758482368376,
+      "userID": 1,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 3,
+          "image": "MenuItems/misal-pav.jpg"
+        }
+      ],
+      "totalAmount": 212.4,
+      "totalItems": 3,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-21T19:19:28.376Z"
+    },
+    {
+      "id": "b72c",
+      "orderID": 1758515749939,
+      "userID": 3,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg",
+          "imageUrl": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 1,
+          "image": "MenuItems/tandoori chicken.jpg"
+        },
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 1,
+          "image": "MenuItems/pav bhaji.jpg"
+        }
+      ],
+      "totalAmount": 306.8,
+      "totalItems": 3,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "789 Lake View, Waterside"
+      },
+      "paymentMethod": 3,
+      "orderDate": "2025-09-22T04:35:49.939Z"
+    },
+    {
+      "id": "ad5d",
+      "orderID": 1758515781047,
+      "userID": 3,
+      "restID": 3,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Rogan Josh",
+          "price": 120,
+          "quantity": 1,
+          "image": "MenuItems/Rogan Josh.jpg"
+        }
+      ],
+      "totalAmount": 141.6,
+      "totalItems": 1,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "789 Lake View, Waterside"
+      },
+      "paymentMethod": 3,
+      "orderDate": "2025-09-22T04:36:21.047Z"
+    },
+    {
+      "id": "b626",
+      "orderID": 1758518618499,
+      "userID": 4,
+      "restID": 4,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Pizza",
+          "price": 180,
+          "quantity": 5,
+          "image": "MenuItems/pizza.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Pasta",
+          "price": 130,
+          "quantity": 1,
+          "image": "MenuItems/pasta.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Minestrone",
+          "price": 150,
+          "quantity": 1,
+          "image": "MenuItems/Minestrone.jpg"
+        }
+      ],
+      "totalAmount": 1392.4,
+      "totalItems": 7,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 3,
+      "orderDate": "2025-09-22T05:23:38.499Z"
+    },
+    {
+      "id": "a307",
+      "orderID": 1758519385549,
+      "userID": 3,
+      "restID": 3,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Shahi Paneer",
+          "price": 100,
+          "quantity": 6,
+          "image": "MenuItems/shahi paneer.jpg"
+        }
+      ],
+      "totalAmount": 708,
+      "totalItems": 6,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "789 Lake View, Waterside"
+      },
+      "paymentMethod": 2,
+      "orderDate": "2025-09-22T05:36:25.549Z"
+    },
+    {
+      "id": "9f01",
+      "orderID": 1758520638722,
+      "userID": 1,
+      "restID": 3,
+      "items": [
+        {
+          "itemID": 3,
+          "name": "Butter Chicken",
+          "price": 150,
+          "quantity": 1,
+          "image": "MenuItems/butter chicken.jpg"
+        }
+      ],
+      "totalAmount": 177,
+      "totalItems": 1,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "789 Tech Park, Cybercity"
+      },
+      "paymentMethod": 2,
+      "orderDate": "2025-09-22T05:57:18.722Z"
+    },
+    {
+      "id": "39d2",
+      "orderID": 1758533696605,
+      "userID": 1,
+      "restID": 3,
+      "items": [
+        {
+          "itemID": 3,
+          "name": "Butter Chicken",
+          "price": 150,
+          "quantity": 3,
+          "image": "MenuItems/butter chicken.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Rogan Josh",
+          "price": 120,
+          "quantity": 3,
+          "image": "MenuItems/Rogan Josh.jpg"
+        }
+      ],
+      "totalAmount": 955.8,
+      "totalItems": 6,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-22T09:34:56.605Z"
+    },
+    {
+      "id": "a02a",
+      "orderID": 1758556844447,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 3,
+          "image": "MenuItems/pav bhaji.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 3,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 3,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 920.4,
+      "totalItems": 9,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-22T16:00:44.448Z"
+    },
+    {
+      "id": "678d",
+      "orderID": 1758558639026,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 4,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 566.4,
+      "totalItems": 4,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-22T16:30:39.026Z"
+    },
+    {
+      "id": "6183",
+      "orderID": 1758559368859,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 3,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 2,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 495.6,
+      "totalItems": 5,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-22T16:42:48.859Z"
+    },
+    {
+      "id": "9c7c",
+      "orderID": 1758561000658,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 2,
+          "image": "MenuItems/pav bhaji.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 2,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 2,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 613.6,
+      "totalItems": 6,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-22T17:10:00.658Z"
+    },
+    {
+      "id": "77a7",
+      "orderID": 1758561217142,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 2,
+          "image": "MenuItems/pav bhaji.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 2,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 2,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 613.6,
+      "totalItems": 6,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-22T17:13:37.142Z"
+    },
+    {
+      "id": "9bf6",
+      "orderID": 1758597737932,
+      "userID": 4,
+      "restID": 1,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Idli",
+          "price": 30,
+          "quantity": 1,
+          "image": "MenuItems/idli.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Dosa",
+          "price": 40,
+          "quantity": 4,
+          "image": "MenuItems/Dosa.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Vada",
+          "price": 25,
+          "quantity": 2,
+          "image": "MenuItems/sambar.jpg"
+        }
+      ],
+      "totalAmount": 283.2,
+      "totalItems": 7,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Work",
+        "fullAddress": "202 Business Tower, Downtown"
+      },
+      "paymentMethod": 1,
+      "orderDate": "2025-09-23T03:22:17.932Z"
+    },
+    {
+      "id": "00fa",
+      "orderID": 1758607802625,
+      "userID": 4,
+      "restID": 2,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "quantity": 1,
+          "image": "MenuItems/pav bhaji.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "quantity": 1,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "itemID": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "quantity": 1,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "totalAmount": 306.8,
+      "totalItems": 3,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "321 Riverwalk, Old Town"
+      },
+      "paymentMethod": 3,
+      "orderDate": "2025-09-23T06:10:02.625Z"
+    },
+    {
+      "id": "ac0f",
+      "orderID": 1758862212257,
+      "userID": 1,
+      "restID": 3,
+      "items": [
+        {
+          "itemID": 1,
+          "name": "Shahi Paneer",
+          "price": 100,
+          "quantity": 1,
+          "image": "MenuItems/shahi paneer.jpg"
+        },
+        {
+          "itemID": 2,
+          "name": "Rogan Josh",
+          "price": 120,
+          "quantity": 1,
+          "image": "MenuItems/Rogan Josh.jpg"
+        }
+      ],
+      "totalAmount": 259.6,
+      "totalItems": 2,
+      "status": "placed",
+      "deliveryAddress": {
+        "type": "Home",
+        "fullAddress": "123 Main St, Springfield",
+        "isDefault": true
+      },
+      "paymentMethod": 2,
+      "orderDate": "2025-09-26T04:50:12.257Z"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Shree Annapoorna",
+      "rating": 4.2,
+      "image": "restaurant1.jpg",
+      "cusine": "South_Indian"
+    },
+    {
+      "id": "2",
+      "name": "Hotel Hari ",
+      "rating": 4.1,
+      "image": "restaurant2.jpg",
+      "cusine": "Maharashtrian"
+    },
+    {
+      "id": "3",
+      "name": "Flavors of Fusion",
+      "rating": 4.5,
+      "image": "restaurant3.jpg",
+      "cusine": "North_Indian"
+    },
+    {
+      "id": "4",
+      "name": "Little Italy",
+      "rating": 3.8,
+      "image": "restaurant4.jpg",
+      "cusine": "Italian"
+    },
+    {
+      "id": "5",
+      "name": "Polar Bear",
+      "rating": 4.3,
+      "image": "restaurant5.jpg",
+      "cusine": "IceCream"
+    },
+    {
+      "id": "6",
+      "name": "Rajpurohit",
+      "rating": 4.5,
+      "image": "restaurant6.jpg",
+      "cusine": "Sweets"
+    }
+  ],
+  "menus": [
+    {
+      "restaurantId": 1,
+      "items": [
+        {
+          "Itemid": 1,
+          "name": "Idli",
+          "price": 30,
+          "image": "MenuItems/idli.jpg"
+        },
+        {
+          "Itemid": 2,
+          "name": "Dosa",
+          "price": 40,
+          "image": "MenuItems/Dosa.jpg"
+        },
+        {
+          "Itemid": 3,
+          "name": "Vada",
+          "price": 25,
+          "image": "MenuItems/sambar.jpg"
+        }
+      ],
+      "id": "9ba0"
+    },
+    {
+      "restaurantId": 2,
+      "items": [
+        {
+          "Itemid": 1,
+          "name": "Pav Bhaji",
+          "price": 80,
+          "image": "MenuItems/pav bhaji.jpg"
+        },
+        {
+          "Itemid": 2,
+          "name": "Misal Pav",
+          "price": 60,
+          "image": "MenuItems/misal-pav.jpg"
+        },
+        {
+          "Itemid": 3,
+          "name": "Tandoori Chicken",
+          "price": 120,
+          "image": "MenuItems/tandoori chicken.jpg"
+        }
+      ],
+      "id": "c33b"
+    },
+    {
+      "restaurantId": 3,
+      "items": [
+        {
+          "Itemid": 1,
+          "name": "Shahi Paneer",
+          "price": 100,
+          "image": "MenuItems/shahi paneer.jpg"
+        },
+        {
+          "Itemid": 2,
+          "name": "Rogan Josh",
+          "price": 120,
+          "image": "MenuItems/Rogan Josh.jpg"
+        },
+        {
+          "Itemid": 3,
+          "name": "Butter Chicken",
+          "price": 150,
+          "image": "MenuItems/butter chicken.jpg"
+        }
+      ],
+      "id": "9736"
+    },
+    {
+      "restaurantId": 4,
+      "items": [
+        {
+          "Itemid": 1,
+          "name": "Pizza",
+          "price": 180,
+          "image": "MenuItems/pizza.jpg"
+        },
+        {
+          "Itemid": 2,
+          "name": "Pasta",
+          "price": 130,
+          "image": "MenuItems/pasta.jpg"
+        },
+        {
+          "Itemid": 3,
+          "name": "Minestrone",
+          "price": 150,
+          "image": "MenuItems/Minestrone.jpg"
+        },
+        {
+          "Itemid": 4,
+          "name": "Italian Noodles",
+          "price": 200,
+          "image": "MenuItems/noodles.jpg"
+        }
+      ],
+      "id": "1108"
+    },
+    {
+      "restaurantId": 5,
+      "items": [
+        {
+          "Itemid": 1,
+          "name": "Chocolate Ice Cream",
+          "price": 60,
+          "image": "MenuItems/C_IceCream.jpg"
+        },
+        {
+          "Itemid": 2,
+          "name": "Strawberry Ice Cream",
+          "price": 50,
+          "image": "MenuItems/S_IceCream.jpg"
+        },
+        {
+          "Itemid": 3,
+          "name": "Sundae",
+          "price": 120,
+          "image": "MenuItems/IceCream-sundae.jpg"
+        },
+        {
+          "Itemid": 4,
+          "name": "Cherry Venila Ice Cream",
+          "price": 70,
+          "image": "MenuItems/CV_IceCream.jpg"
+        }
+      ],
+      "id": "693c"
+    },
+    {
+      "restaurantId": 6,
+      "items": [
+        {
+          "Itemid": 1,
+          "name": "Gulab Jamun",
+          "price": 80,
+          "image": "MenuItems/gulab-jamun.jpg"
+        },
+        {
+          "Itemid": 2,
+          "name": "Rasgulla",
+          "price": 80,
+          "image": "MenuItems/rasgulla.jpg"
+        },
+        {
+          "Itemid": 3,
+          "name": "Rice Kheer",
+          "price": 40,
+          "image": "MenuItems/rice-kheer.jpg"
+        }
+      ],
+      "id": "99fb"
+    }
+  ]
+}
